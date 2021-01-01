@@ -1,0 +1,29 @@
+<div class="example-container">
+    <h1 class="tituloLogin">Registro</h1>
+    <form [formGroup]='registroForm' (ngSubmit)="registro()">
+        <ul>
+            <li class="listasObjetos">
+                <mat-form-field appearance="fill" class="cuadroTextoLogin">
+                    <mat-label>Ingresa tu nombre de usuario</mat-label>
+                    <input matInput placeholder="rarr12" formControlName="usuario" required>
+                </mat-form-field>
+            </li>
+            <li class="listasObjetos">
+                <mat-form-field appearance="fill" class="cuadroTextoLogin">
+                    <mat-label>Ingresa tu contraseña</mat-label>
+                    <input matInput placeholder="*****" formControlName="contrasena" required>
+                </mat-form-field>
+            </li>
+            <li class="listasObjetos">
+                <mat-form-field appearance="fill" class="cuadroTextoLogin">
+                    <mat-label>Ingresa tu rol</mat-label>
+                    <input matInput placeholder="Distribuidor" formControlName="rol" required>
+                </mat-form-field>
+            </li>
+        </ul>
+
+        <button type="submit" [disabled]="registroForm.invalid" mat-raised-button class="botonLogin">
+            Registro   
+        </button>
+    </form>
+</div>

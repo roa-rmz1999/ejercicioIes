@@ -1,0 +1,22 @@
+<mat-drawer-container class="example-container">
+
+    <mat-list class="lista">
+        <mat-list-item> Menu </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item> Usuario: {{ usuarioHeader }} </mat-list-item>
+        <mat-divider></mat-divider>
+        <button class="subLista" mat-button routerLink='/inicio'>
+            <mat-list-item> Inicio </mat-list-item>
+        </button>
+        <mat-divider></mat-divider>
+        <button class="subLista" mat-button routerLink='/componenteUno'>
+            <mat-list-item> Componente Uno </mat-list-item>
+        </button>
+        <mat-divider></mat-divider>
+        <button class="subLista" mat-button (click)="logout()">
+            <mat-list-item> Logout </mat-list-item>
+        </button>
+        <mat-divider></mat-divider>
+    </mat-list>
+
+</mat-drawer-container>

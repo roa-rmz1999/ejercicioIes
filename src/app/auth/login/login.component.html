@@ -1,0 +1,41 @@
+<div class="fondoLogin">
+    <div class="invisible">
+        <p>.</p>
+    </div>
+    <div class="example-container">
+        <h1 class="tituloLogin">Inicia sesión</h1>
+        <form [formGroup]='loginForm' (ngSubmit)="logeo()">
+            <ul>
+                <li class="listasObjetos">
+                    <mat-form-field appearance="fill" class="cuadroTextoLogin">
+                        <mat-label>Ingresa tu nombre de usuario</mat-label>
+                        <input matInput placeholder="rarr12" formControlName="usuario" required>
+                        <mat-error *ngIf="loginForm.invalid">
+                            <!--{{errorUsuario()}}-->
+                        </mat-error>
+                    </mat-form-field>
+                    <span class="errorLogeo">{{errorLogeo}}</span>
+
+                </li>
+                <li class="listasObjetos">
+                    <mat-form-field appearance="fill" class="cuadroTextoLogin">
+                        <mat-label>Ingresa tu contraseña</mat-label>
+                        <input matInput placeholder="**********" formControlName="contrasena" required>
+                        <mat-error *ngIf="loginForm.invalid">
+                            <!-- {{errorContrasena()}}-->
+                        </mat-error>
+                    </mat-form-field>
+                    <span class="errorLogeo">{{errorLogeo}}</span>
+
+                </li>
+            </ul>
+
+            <button type="submit" [disabled]="loginForm.invalid" mat-raised-button class="botonLogin">
+            Iniciar sesión    
+        </button>
+        </form>
+    </div>
+    <div class="invisible">
+        <p>.</p>
+    </div>
+</div>

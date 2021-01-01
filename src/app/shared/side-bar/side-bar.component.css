@@ -1,0 +1,13 @@
+.example-container {
+    border-right: 1px solid rgba(0, 0, 0, .20);
+    background: blanchedalmond;
+    height: 100%;
+}
+
+.lista {
+    width: 100%;
+}
+
+.subLista {
+    width: 100%;
+}

@@ -1,0 +1,52 @@
+.fondoLogin {
+    margin-top: 0px;
+    width: 100%;
+    background: url(../../../assets/img/login_1.jpg);
+}
+
+.example-container {
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10em;
+    border: 1px solid rgba(0, 0, 0, .40);
+    background: ivory;
+    border-radius: 5px;
+}
+
+.listasObjetos {
+    list-style: none;
+}
+
+.tituloLogin {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+}
+
+.cuadroTextoLogin {
+    width: 95%;
+}
+
+.botonLogin {
+    background: darkolivegreen;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    color: #ffffff;
+}
+
+.invisible {
+    width: 100%;
+    margin-top: 0px;
+    height: 5em;
+}
+
+.errorLogeo {
+    color: darkred;
+    font-size: 15px;
+    margin-top: 0%;
+}
